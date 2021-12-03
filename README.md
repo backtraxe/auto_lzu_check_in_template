@@ -14,7 +14,7 @@
 
 <img src="imgs/step2.png" width="640px" />
 
-3. 填入`https://github.com/backtraxe/auto-lzu-check-in-template`，名字随意，选择`private`（确保密码不公开），然后导入。
+3. 填入`https://github.com/backtraxe/auto_lzu_check_in_template`，名字随意，选择`private`（确保密码不公开），然后导入。
 
 <img src="imgs/step3.png" width="640px" />
 
