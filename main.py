@@ -41,9 +41,15 @@ driver.implicitly_wait(2)
 # 判断打卡是否成功
 try:
     driver.find_element(By.XPATH, '//*[text()="确定"]')
-    print(username, '打卡成功！')
+    flag = 1
 except:
-    print(username, '打卡失败！')
+    flag = 0
+
+msg = 'SUCCEEDED!' if flag == 1 else 'FAILED!'
+n = len(username) + len(msg) + 5
+print('#' * n)
+print('#', username, msg, '#')
+print('#' * n)
 
 # 退出
 driver.quit()
