@@ -1,4 +1,4 @@
-name: selenium
+name: lzu_check_in
 
 # Controls when the workflow will run
 on:
