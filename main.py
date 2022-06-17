@@ -1,16 +1,23 @@
+from fake_useragent import UserAgent
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-username = secrets.USERNAME
-password = secrets.PASSWORD
+import sys
+
+# 账号密码
+username = sys.argv[1]
+password = sys.argv[2]
 
 # 打开网址
 options = webdriver.ChromeOptions()
 options.add_argument('--headless') # 后台运行
 options.add_argument('--disable-gpu')
-options.add_argument('user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"')
+ua = UserAgent()
+options.add_argument('user-agent=' + ua.random())
 
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(options=options, service=Service(ChromeDriverManager().install()))
 driver.get('http://my.lzu.edu.cn/')
 
 # 自动登录
