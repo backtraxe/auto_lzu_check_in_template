@@ -1,8 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-username = ''
-password = ''
+username = secrets.USERNAME
+password = secrets.PASSWORD
 
 # 打开网址
 options = webdriver.ChromeOptions()
