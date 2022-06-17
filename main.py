@@ -14,8 +14,7 @@ password = sys.argv[2]
 options = webdriver.ChromeOptions()
 options.add_argument('--headless') # 后台运行
 options.add_argument('--disable-gpu')
-ua = UserAgent()
-options.add_argument('user-agent=' + ua.random())
+options.add_argument("user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'")
 
 driver = webdriver.Chrome(options=options, service=Service(ChromeDriverManager().install()))
 driver.get('http://my.lzu.edu.cn/')
