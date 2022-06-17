@@ -22,10 +22,7 @@ jobs:
           python-version: 3.8
 
       - name: Install requirements
-        run: pip install -q selenium webdriver-manager
+        run: pip install -q selenium webdriver-manager fake_useragent
 
       - name: Run main.py
-        run: |
-          sudo cp chromedriver /usr/bin
-          sudo chmod -R 777 /usr/bin/chromedriver
-          python main.py
+        run: python main.py ${{ secrets.USERNAME }} ${{ secrets.PASSWORD }}
