@@ -21,14 +21,9 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Install selenium
-        run: pip install -q selenium
-      
-      - name: Download chromedriver
-        run: |
-          version=$(google-chrome --version)
-          echo $version
-      
+      - name: Install requirements
+        run: pip install -q selenium webdriver-manager
+
       - name: Run main.py
         run: |
           sudo cp chromedriver /usr/bin
