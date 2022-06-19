@@ -14,7 +14,7 @@
 
 <br />
 
-## 4. 测试。点击`Actions`->`Select workflow`->`auto_lzu_check_in`
+## 4. 测试。点击`Actions`->`Select workflow`->`auto_lzu_check_in`->`Run workflow`->`Run workflow`，然后刷新页面，等待一段时间，出现绿色运行记录即为测试成功。
 
 <img src="imgs/step4.jpeg" />
 
