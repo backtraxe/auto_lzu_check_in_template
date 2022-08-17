@@ -1,5 +1,7 @@
 # 兰州大学自动每日健康打卡
 
+- no updates
+
 ## 1. `Fork`本仓库。
 
 <img src="imgs/step1.jpeg" />
