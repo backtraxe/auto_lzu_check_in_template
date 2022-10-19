@@ -22,7 +22,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install requirements
-        run: pip install -q selenium webdriver-manager fake_useragent
+        run: pip install -q selenium webdriver-manager fake_useragent packaging
 
       - name: Run main.py
         run: python main.py ${{ secrets.USERNAME }} ${{ secrets.PASSWORD }}
