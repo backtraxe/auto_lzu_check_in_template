@@ -1,6 +1,6 @@
 # 兰州大学自动每日健康打卡
 
-- no updates
+- `2022/10/19`：升级到`actions/checkout@v3`和`actions/setup-python@v4`，并且添加依赖`packaging`。
 
 ## 1. `Fork`本仓库。
 
