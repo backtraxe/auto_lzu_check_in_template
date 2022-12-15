@@ -1,9 +1,9 @@
 name: auto_lzu_check_in
 
 on:
-  schedule:
+  # schedule:
     # 在北京时间 06:00, 08:00, 10:00 自动执行
-    - cron: '0 22,0,2 * * *'
+    # - cron: '0 22,0,2 * * *'
 
   # 允许手动执行
   workflow_dispatch:
