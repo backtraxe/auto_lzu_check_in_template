@@ -1,5 +1,6 @@
 # 兰州大学自动每日健康打卡
 
+- `2022/12/15`：兰州大学健康打卡正式下线。
 - `2022/10/19`：升级到`actions/checkout@v3`和`actions/setup-python@v4`，并且添加依赖`packaging`。
 
 ## 1. `Fork`本仓库。
